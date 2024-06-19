@@ -1,0 +1,93 @@
+/* FONDO */
+
+.fondo-modal { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    
+    background: rgba(0,0,0,0.6);
+    
+    /* Centrar su contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* VENTANA MODAL */
+
+.ventana {
+    max-width:1000px;
+    background:#fff;
+    
+    position: relative;
+}
+
+/* Posición del avatar */
+
+.ventana .avatar {
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+    gap: 20px;
+}
+
+.ventana a img {
+  display: block;
+  background: var(--colorIcones);
+  padding: 5px;
+    
+  position: absolute;
+  top:30px;
+  right:30px;
+}
+
+.ventana a img:hover {
+  background: var(--colorIconeshover);
+  transition:100ms;
+}
+
+.ventana picture img {
+  padding:20px 20px 0 20px;
+  width: 100%;
+}
+
+/* Estado incial */
+#modal1, 
+#modal2, 
+#modal3, 
+#modal4, 
+#modal5, 
+#modal6, 
+#modal7 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Estado cuando es llamada */
+#modal1:target, 
+#modal2:target, 
+#modal3:target, 
+#modal4:target,
+#modal5:target,
+#modal6:target,
+#modal7:target {
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
+}
+
+/* Estado al que pasa al cerrar */
+#modal1:not(:target),
+#modal2:not(:target),
+#modal3:not(:target),
+#modal4:not(:target),
+#modal5:not(:target),
+#modal6:not(:target),
+#modal7:not(:target){
+    opacity: 0;
+    visibility: hidden;
+    transition:1s;
+}

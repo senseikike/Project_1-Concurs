@@ -1,0 +1,312 @@
+/* VARIABLES */
+
+:root {
+    --tipoCab: "Libre Franklin", Arial, Helvetica, sans-serif;
+    --tipoText: "Inter", Arial, Helvetica, sans-serif;
+    --colorGris:#949494;
+    --colorMigas: #585555;
+    --colorIcones: rgba(48,48,48,1);
+    --colorIconeshover: rgba(97,97,97,1);
+}
+
+/* GENERALES */
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--tipoText);
+}
+
+/* CABECERAS */
+
+h1 {
+  width: 100%;
+  max-width: 460px;
+
+  font-size: 32px;
+  font-weight: 700;
+
+  margin: 3vw 0 0 4vw; 
+}
+
+h1 span {
+  color: var(--colorGris);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 48px;
+  align-self: flex-start;
+  margin-bottom: 12px;
+}
+
+/* HEADER */
+
+header {
+  margin: 0 auto;
+  width: 100%;
+}
+
+header picture {
+  width: 100%;
+}
+
+header picture img {
+  width: 100%;
+}
+
+/* NAV */
+
+nav.menu {
+  display: flex;
+  justify-content: end;
+
+  margin: 0 77px 22px 0;
+}
+
+nav.menu ul {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 372px;
+}
+
+nav.menu ul li {
+  list-style-type: none;
+}
+
+/* MIGAS DE PAN */
+
+nav ol li a {
+  color:var(--colorIcones);
+}
+
+ol.migas {
+  display: flex;
+  gap: 12px;
+}
+
+ol.migas li {
+  list-style-type: none;
+  color: var(--colorMigas);
+}
+
+ol.migas li + li::before{
+  content: ">";
+  padding:0 12px 0 0;
+}
+
+/* GALERIA */
+
+div.galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+}
+
+div.galeria section {
+  display: flex;
+  flex-direction: column;
+  
+  width: 100%;
+  max-width: 85.5vw;
+  margin: 53px 0 53px 0;
+}
+
+div.fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  width:100%;
+  max-width:90vw; 
+}
+
+/* INICIO HACK space-evenly */
+
+div.imatge:last-child{
+  margin-left: 2.15vw;
+}
+
+div.fotos::after {
+  content: '';
+  flex: auto;
+}
+
+/* FIN HACK space-evenly */
+
+/* EFECTO :hover */
+
+/* 1. contenedor relative para contener position absolute */
+
+div.imatge {
+  position: relative;
+  
+  width: 100%;
+  max-width: 27vw; 
+  
+  margin-bottom: 2vw;
+}
+
+/* 2. declaración para el primer picture dentro de div.imatge */
+
+div.imatge picture:nth-child(0) {
+  width:100%;
+  max-width:350px;
+} 
+
+/* 3. comportamiento de su img */
+
+div.imatge picture img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+}
+
+/* 4. estado inicial capa oculta */
+
+div.imatge div.encima {
+  position: absolute;
+  top:0;
+  left:0;
+
+  width: 100%;
+  height: 100%;
+
+  transition:300ms;
+  background: rgba(0,0,0,0);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  opacity: 0;
+}
+
+/* 5. cambios en la capa oculta al pasar por encima */
+
+div.imatge:hover div.encima {
+  background: rgba(0,0,0,0.3);
+  opacity: 1;
+}
+
+/* 6. posicionamiento de avatar en la capa oculta */
+
+div.encima section.avatar {
+  display: flex;
+  flex-direction: row;
+    
+  align-self: flex-end;
+  align-items: center;
+
+  gap: 20px;
+
+  color: #fff;
+
+  margin: 0;
+  padding: 0 0 1.8vw 2vw;
+}
+
+/* 7. comportamiento del nombre */
+
+section.avatar h3 {
+  word-break: break-word;
+  padding-right: 2vw;
+}
+
+/* 8. ancho y alto en unidades relativas del avatar */
+
+div.encima section.avatar img {
+  width: 4.2vw;
+  height: 4.2vw;
+}
+
+/* 9. posicionamiento de los iconos en la capa oculta */
+
+div.icones {
+  display: flex;
+  align-self: flex-end;
+    
+  gap: 10px;
+    
+  margin: 10px 10px 0 0;
+}
+
+/* 10. comportamiento y aspecto de los iconos */
+
+div.icones img {
+  display: block;
+
+  background: var(--colorIcones);
+  padding: 5px;
+}
+
+/* 11. comportamiento de los iconos al pasar por encima */
+
+div.icones img:hover {
+  background: var(--colorIconeshover);
+  transition:100ms;
+}
+
+/* REGLAS @media PARA EL RESPONSIVE */
+
+/* Reglas que sobreescriben las anteriores entre 360px y 768px */
+
+@media screen and (min-width:360px) and (max-width: 768px) {
+
+  h1 {
+    margin:0;
+    padding:4vw 3vw 3vw 3vw;
+    max-width: fit-content;
+  }
+
+  nav {
+    margin:0;
+  }
+
+  nav.menu {
+    margin:22px;
+  }
+
+  nav ul {
+    justify-content: space-around;
+    margin: 22px 0 22px 0;
+  }
+
+  div.galeria section {
+    margin-top: 25px;
+  }
+
+  div.galeria section h2 {
+    font-size: 42px;
+  }
+
+  div.fotos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.imatge {
+    max-width: 100%;
+  }
+
+  div.imatge:last-child{
+    margin-left: 0;
+  }
+
+  div.encima section.avatar {
+    padding: 0 0 3.6vw 4vw;
+  }
+
+  div.encima section.avatar img {
+    width: 12vw;
+    height: 12vw;
+  }
+
+}

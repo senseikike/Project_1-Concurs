@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es-CA">
+<head>
+    <title>Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Concurs de fotografies de cases rurals">
+    <link href="css27/reset.css" rel="stylesheet">
+    <link href="css27/estilos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css27/modal.css">
+</head>
+<body>
+
+    <main>
+    <!--INICIO GALERIA-->
+        <div class="galeria">
+
+        <!--INICIO Fotos-->
+        <div class="fotos">
+
+            <!--foto 1-->
+            <div id="uno" class="imatge">
+                
+                <picture>
+                    <source srcset="img/imatge1-360.jpg, img/imatge1-360-2x.jpg 2x" media="(min-width:480px) and (max-width:768px)">
+                    <img src="img/imatge1.jpg" alt="casa rural uno">
+                </picture>
+                
+                <div class="encima">
+                    <div class="icones">
+                        <a href="#" title="Me gusta">
+                            <img src="img/icona-like.svg" class="like" name="boton" id="megusta" alt="Me gusta">
+                        </a>
+                        <a href="#modal1" title="Ver foto">
+                            <img src="img/icona-veure.svg" alt="Ver foto">
+                        </a>    
+                    </div>
+                    <section class="avatar">
+                        <picture>
+                            <source srcset="img/avatar1.png, img/avatar1-2x.png 2x">
+                            <img src="img/avatar1.png" alt="Marta Torrijos Zabala">
+                        </picture>
+                        <h3>Marta Torrijos Zabala</h3>
+                    </section>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+    <script src="js/Ex27.js"></script>
+</body>
+</html>

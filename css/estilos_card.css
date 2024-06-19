@@ -1,0 +1,576 @@
+/*AFECTA AL DINAMISMO DE LOS ICONOS*/
+
+.card div header {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card div footer {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card div:hover header {
+    opacity: 1;
+}
+
+.card div:hover footer {
+    opacity: 1;
+}
+
+/* ACTÚA SOBRE EL FILTRO EN LAS IMÁGENES */
+.card:hover .arbolico {
+    filter: brightness(70%);
+}
+
+
+/*ACTÚA SOBRE TODOS LOS ELEMENTOS SUPERIORES (NAV) */
+
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    background: linear-gradient(90deg, hsl(0, 0%, 100%) 5%, rgb(245, 153, 68) 95%);
+    height: 100px;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.cabecerica img {
+    width: 100%;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+ul li {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    float: right;
+    flex-direction: row-reverse;
+    margin-right: 20px;
+    position: relative;
+    bottom: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h2 {
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.menu2 {
+    width: 199px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+}
+
+
+/*ACTÚA SOBRE LAS CARD */
+#cards11 {
+    display: none;
+}
+
+#cards11:target {
+    display: block;
+}
+
+.all_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 25px;
+    gap: 50px;
+}
+
+
+.card_marta {
+    width: 350px;
+    height: 400px;
+    position: relative;
+}
+
+.card_meli {
+    width: 350px;
+    height: 400px;
+    position: relative;
+}
+
+.card_nico {
+    width: 350px;
+    height: 400px;
+    position: relative;
+}
+
+.card_yola {
+    width: 350px;
+    height: 400px;
+    position: relative;
+}
+
+.card_isaac {
+    width: 350px;
+    height: 400px;
+    position: relative;
+}
+
+.card_emilio {
+    width: 350px;
+    height: 400px;
+    position: relative;
+}
+
+.card_jacq {
+    width: 350px;
+    height: 400px;
+    position: relative;
+}
+
+/*ACTÚA SOLO SOBRE LOS ICONOS*/
+
+.like img {
+    width: 33;
+    height: 28;
+    margin-left: 13px;
+    margin-top: 14px;
+
+}
+
+.icon_like_marta {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(53, 53, 53);
+    flex-direction: row;
+    justify-content: end;
+}
+
+.icon_view_marta {
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(53, 53, 53);
+    margin-right: 10px;
+}
+
+.view img {
+    width: 33;
+    height: 28;
+    margin-left: 10px;
+    margin-top: 14.5px;
+}
+
+
+/*CARD MARTA*/
+
+.card_marta header {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 10px 10px 0 0;
+    width: 100%;
+}
+
+
+
+.arbolico {
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    z-index: -5;
+
+}
+
+.bottom {
+    margin-top: 250px;
+    
+
+}
+
+div footer p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    display: flex;
+    justify-content: center; 
+    width: 200px; 
+    margin-right: 20px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.bottom p {
+    margin-top: 15px;
+}
+
+
+/*CARD MELICHAN*/
+.card_meli header {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 10px 10px 0 0;
+    width: 100%;
+}
+
+.icon_like_melihcan {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(53, 53, 53);
+    flex-direction: row;
+    justify-content: end;
+}
+
+.icon_view_melihcan {
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(53, 53, 53);
+    margin-right: 10px;
+}
+
+.macetica {
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top: 4500px;
+    z-index: -5;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.bottom p {
+    margin-top: 15px;
+}
+
+
+/*CARD FILIPINO NICHOLAS*/
+.card_nico header {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 10px 10px 0 0;
+    width: 100%;
+}
+
+.icon_like_nicholas {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(53, 53, 53);
+    flex-direction: row;
+    justify-content: end;
+}
+
+.icon_view_nicholas {
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(53, 53, 53);
+    margin-right: 10px;
+}
+
+.guadalajara {
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top: 855px;
+    z-index: -5;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.bottom p {
+    margin-top: 15px;
+}
+
+
+/*CARD SISTERS YOLANDA*/
+.card_yola header {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 10px 10px 0 0;
+    width: 100%;
+}
+
+.icon_like_yolanda {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(53, 53, 53);
+    flex-direction: row;
+    justify-content: end;
+}
+
+.icon_view_yolanda {
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(53, 53, 53);
+    margin-right: 10px;
+}
+
+.casa_roja {
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top: 1260px;
+    z-index: -5;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.bottom p {
+    margin-top: 15px;
+    width: 230px;
+}
+
+
+/*CARD GRADUADO ISAAC*/
+.card_isaac header {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 10px 10px 0 0;
+    width: 100%;
+}
+
+.icon_like_isaac {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(53, 53, 53);
+    flex-direction: row;
+    justify-content: end;
+}
+
+.icon_view_isaac {
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(53, 53, 53);
+    margin-right: 10px;
+}
+
+.la_comarca {
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top: 1665px;
+    z-index: -5;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 30px;
+    position: relative;
+    bottom: 16px;
+}
+
+
+.bottom p {
+    margin-top: 15px;
+}
+
+
+/*CARD EMILIO BLACK*/
+.card_emilio header {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 10px 10px 0 0;
+    width: 100%;
+}
+
+.icon_like_emilio {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(53, 53, 53);
+    flex-direction: row;
+    justify-content: end;
+}
+
+.icon_view_emilio {
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(53, 53, 53);
+    margin-right: 10px;
+}
+
+.pool {
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top: 2070px;
+    z-index: -5;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.bottom p {
+    margin-top: 15px;
+}
+
+
+
+/*CARD JACQUELINE*/
+.card_jacq header {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 10px 10px 0 0;
+    width: 100%;
+}
+
+.icon_like_jacqueline {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(53, 53, 53);
+    flex-direction: row;
+    justify-content: end;
+}
+
+.icon_view_jacqueline {
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(53, 53, 53);
+    margin-right: 10px;
+}
+
+.rural {
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top: 2480px;
+    z-index: -5;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.bottom p {
+    margin-top: 15px;
+}
+
+
+/* AFECTA A CABECERA */
+
+.cabecerica img {
+    width: 100%;
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .all_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        height: 240px;
+    }
+
+    .card:hover .arbolico {
+        filter: none;
+    }
+
+    
+    h1 {
+        font-size: x-large;
+        width: 200px;
+    }
+
+    ul li {
+        display: none;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .top .menu {
+        display: flex;
+        align-items: center;
+    }
+    
+    .card .all_icons {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 3001px) {
+    nav img {
+        display: none;
+    }    
+
+}
+
+
